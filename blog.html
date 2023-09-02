@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="my-[13%] mx-10">
+        <div id="blog-post">
+            <div tabindex="0" class="collapse bg-primary text-primary-content focus:bg-secondary focus:text-secondary-content">
+                <div class="collapse-title">
+                    Discuss the scope of var, let, and const
+                </div>
+                <div class="collapse-content"> 
+                  <p>Certainly, here's a shorter explanation of the scope of `var`, `let`, and `const` without code snippets:
+
+                    1. `var`:
+                       - Function-scoped or globally if declared outside functions.
+                       - Hoisted to the top of the function or global scope.
+                       - Allows re-declaration within the same scope.
+                    
+                    2. `let`:
+                       - Block-scoped (inside curly braces).
+                       - Hoisted to the top of the block but not initialized.
+                       - Does not allow re-declaration within the same block scope.
+                    
+                    3. `const`:
+                       - Block-scoped.
+                       - Hoisted but not initialized.
+                       - Variables declared with `const` cannot be reassigned, but for objects and arrays, their properties or elements can be modified.</p>
+                </div>
+            </div>
+            <div tabindex="0" class="collapse bg-primary text-primary-content focus:bg-secondary focus:text-secondary-content my-6">
+                <div class="collapse-title">
+                    Tell us the use cases of null and undefined.
+                </div>
+                <div class="collapse-content"> 
+                  <p>Certainly, here are the use cases for `null` and `undefined`:
+
+                    1. `null`:
+                       - Explicitly set by a developer to indicate the absence of value or an empty object.
+                       - Often used to initialize variables or properties when no value is appropriate.
+                    
+                    2. `undefined`:
+                       - Automatically assigned by JavaScript to variables that have been declared but not initialized.
+                       - Represents the default value for function parameters not provided by the caller.
+                       - Typically indicates a variable's absence or an error in the code.</p>
+                </div>
+            </div>
+            <div tabindex="0" class="collapse bg-primary text-primary-content focus:bg-secondary focus:text-secondary-content">
+                <div class="collapse-title">
+                    What do you mean by REST API?
+                </div>
+                <div class="collapse-content"> 
+                  <p>REST API, or Representational State Transfer Application Programming Interface, is a set of architectural constraints and principles used to design networked applications and web services. It is based on a stateless, client-server communication model and is widely used for building scalable and maintainable web services. Here's a brief explanation of its key concepts:
+
+                    1. **Resources**: In a REST API, everything is treated as a resource, which can be an object, data, or service. Each resource is uniquely identified by a URL (Uniform Resource Locator).
+                    
+                    2. **HTTP Methods**: REST APIs use standard HTTP methods for operations on resources. The most common methods include:
+                       - GET: Retrieve data from the server.
+                       - POST: Create a new resource on the server.
+                       - PUT: Update an existing resource or create a new one if it doesn't exist.
+                       - DELETE: Remove a resource from the server.
+                       - PATCH: Partially update a resource.
+                    
+                    3. **Stateless**: REST is stateless, meaning each request from a client to the server must contain all the information needed to understand and process the request. The server does not store any client state between requests.
+                    
+                    4. **Representation**: Resources can have multiple representations (e.g., JSON, XML, HTML), and clients can request the representation that best suits their needs using HTTP headers (e.g., `Accept` and `Content-Type`).
+                    
+                    5. **Uniform Interface**: REST APIs have a uniform and consistent interface, making it easier to work with and discover APIs. This includes the consistent use of HTTP methods and status codes.
+                    
+                    6. **Client-Server Architecture**: REST separates the client (the user interface) from the server (the data store and business logic), allowing them to evolve independently and improve scalability.
+                    
+                    7. **Statelessness**: Each request from a client to a server must contain all the information needed to understand and process the request. The server does not store any client state between requests.
+                    
+                    REST APIs are commonly used in web development to expose data and services over the internet in a scalable and interoperable way. They are often used for building web applications, mobile apps, and integrations between different systems and services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
